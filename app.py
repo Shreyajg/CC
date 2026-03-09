@@ -1,5 +1,4 @@
 import streamlit as st
-from streamlit_autorefresh import st_autorefresh
 import firebase_admin
 from firebase_admin import credentials, firestore
 import pandas as pd
