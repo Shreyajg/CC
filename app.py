@@ -84,7 +84,11 @@ def save_baseline_to_firestore(series):
         {"values": series.to_dict()}
     )
 
-saved_baseline = load_baseline_from_firestore()
+saved_baseline = {
+    "movement": 0.2,
+    "pacing": 0.1,
+    "agitation_score": 0.05
+}
 
 # ---------------- SHOW SAVED BASELINE ----------------
 if saved_baseline is not None:
